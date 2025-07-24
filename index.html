@@ -5,20 +5,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Masseria Jabali - A Holistic Solution</title>
     
+    <!-- Google Fonts: Prata for headers, Albert Sans for body -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
-    
+    <link href="https://fonts.googleapis.com/css2?family=Albert+Sans:wght@400;600&family=Prata&display=swap" rel="stylesheet">
+
+    <!-- Link to your external stylesheet -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <header class="site-header">
         <div class="header-left">
-            <a href="#">Menu</a>
+            <a href="#" class="nav-link">Menu</a>
         </div>
         <div class="header-center">
-            <!-- <a href="#" class="logo">Masseria Jabali</a> -->
              <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="200" height="50px" viewBox="0 0 526 200" version="1.1">
 <defs>
 <filter id="alpha" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%">
@@ -88,20 +89,20 @@
 <use xlink:href="#surface17" mask="url(#mask4)"></use>
 </g>
 </svg>
+</div>
         </div>
         <nav class="header-right">
-            <a href="#vision">Vision</a>
-            <a href="#timeline">Timeline</a>
-            <a href="#contact">Contact</a>
+            <a href="#vision" class="nav-link">Vision</a>
+            <a href="#timeline" class="nav-link">Timeline</a>
+            <a href="#contact" class="nav-link">Contact</a>
         </nav>
     </header>
 
     <main>
         <section class="hero-section" id="hero">
-            <h1 class="hero-curved-text">A HOLISTIC SOLUTION</h1>
-            <div class="hero-center-visual">
+            <div class="hero-curved-text-container">
+                <h1 id="hero-curved-text">A ✹ HOLISTIC ✹ SOLUTION</h1>
                 <div class="placeholder-main">Masseria Jabali</div>
-                <a href="#vision" class="btn">Discover Our Vision</a>
             </div>
             <div class="hero-info-grid">
                 <div class="info-box">
@@ -122,8 +123,9 @@
             <div class="content-grid">
                 <h2>Our Vision</h2>
                 <div class="text-columns">
-                    <p>Masseria Jabali blends premium assisted living with a 2.5-ha syntropic farm, welcoming 35 residents, including UK expats. English-speaking carers and refugee trainees foster an inclusive, supportive community.</p>
-                    <p>We are building a new model for retirement that is both socially responsible and environmentally sustainable, aiming to set a new standard for eldercare in the Salento region.</p>
+                    <p>Masseria Jabali blends premium assisted living with a 3-ha syntropic farm, welcoming 35+ international residents. English-speaking carers and refugee trainees foster an inclusive, supportive community.</p>
+                    <p>We are building a new model for assisted living that is both socially responsible and environmentally regenerative, aiming to set a new standard for eldercare in the Mediterannean.</p>
+                    <p>See the full business plan draft <a href="https://docs.google.com/document/d/1EsvW0A00MakukiSitNEbvnUMku3SYY9uX56jQkBvwsI/edit?usp=sharing" class="nav-link" target="_blank" rel="noopener noreferrer">here.</a></p>
                 </div>
             </div>
         </section>
@@ -145,13 +147,13 @@
             <div class="actions-grid">
                 <div class="action-box">
                     <h3>Join Our Lecce Event</h3>
-                    <p>Explore Salento’s revival at a 3-hour Lecce event. Enjoy aperitivos, network, and learn about “Resto al Sud” grants.</p>
+                    <p>Explore Salento’s revival at a 3-hour Lecce event. Enjoy aperitivo, network, and learn about startup capital for your regenerative projects in Salento.</p>
                      <a href="#contact" class="btn">Get Updates</a>
                 </div>
                  <div class="action-box">
                     <h3>Support Our Mission</h3>
                     <p>Your contribution directly supports sustainable eldercare, Salento’s local economy, and refugee empowerment.</p>
-                     <a href="https://www.gofundme.com/your-campaign" target="_blank" class="btn">Donate Now</a>
+                     <a href="https://www.gofundme.com/your-campaign" target="_blank" rel="noopener noreferrer" class="btn">Donate Now</a>
                 </div>
             </div>
         </section>
@@ -169,5 +171,11 @@
         <div class="placeholder-footer" style="background-color: #5C5346;"></div>
     </footer>
 
+    <!-- JavaScript for Circular Text -->
+    <script src="https://cdn.jsdelivr.net/npm/circletype@2.3.0/dist/circletype.min.js"></script>
+    <script>
+        const circularText = new CircleType(document.getElementById('hero-curved-text'));
+        circularText.radius(160); 
+    </script>
 </body>
 </html>
